@@ -1,0 +1,17 @@
+$activeColor : #fcc100;
+$activeDeep : #75611f;
+
+body{
+    *{
+        font-family: 'Montserrat', 'IBM Plex Sans KR', sans-serif;
+        font-weight: 400;
+    }
+}
+h1, h2, h3, p, ul, li, dl, dt, dd{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: $activeColor;
+}
