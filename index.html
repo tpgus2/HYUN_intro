@@ -31,8 +31,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- Core theme CSS-->
         <link href="./css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
        <!-- 커스텀 css -->
         <link rel="stylesheet" href="./css/my.min.css">
@@ -103,7 +104,7 @@
                     <div class="col-md-3 col-6 mt-3 mt-md-0">
                         <div class="cycle">
                             <h4 class="my-3">Multiplayer</h4>
-                            <p class="text-muted">멀티플레이어</p>
+                            <p class="text-muted">다재다능한</p>
                         </div>
                     </div>
                 </div>
@@ -113,13 +114,13 @@
         <section class="" id="history">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">History</h2>
+                    <h2 class="section-heading text-uppercase mb-5">History</h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
                 <ul class="timeline">
                     <li>
                         <a class="timeline-image">
-                            <img class="rounded-circle img-fluid" src="" alt="..." />
+                            <img class="rounded-circle img-fluid h-100" src="./img/history0.jpg" alt="..." />
                         </a>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -128,14 +129,13 @@
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">경인여자대학교 웨딩플래너과 전공</p>
-                                <p class="text-muted">010-5544-2701</p>
                                 <p class="text-muted">hyun_022@naver.com</p>
                             </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <a class="timeline-image">
-                            <img class="rounded-circle img-fluid" src="" alt="..." />
+                            <img class="rounded-circle img-fluid h-100" src="./img/history0.jpg" alt="..." />
                         </a>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -149,7 +149,7 @@
                     </li>
                     <li>
                         <a class="timeline-image">
-                            <img class="rounded-circle img-fluid" src="" alt="..." />
+                            <img class="rounded-circle img-fluid h-100" src="./img/history3.jpg" alt="..." />
                         </a>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -157,13 +157,13 @@
                                 <h4 class="subheading">아이니웨딩</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">웨딩플래너 재직</p>
+                                <p class="text-muted">웨딩컨설팅 근무, 웨딩플래너 업무</p>
                             </div>
                         </div>
                     </li>
                     <li class="timeline-inverted">
                         <a class="timeline-image">
-                            <img class="rounded-circle img-fluid" src="" alt="..." />
+                            <img class="rounded-circle img-fluid h-100" src="./img/history2.jpg" alt="..." />
                         </a>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -185,7 +185,60 @@
                 </ul>
             </div>
         </section>
+
+<section id="teamproject">
+
+        <div class="swiper TeamSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container d-flex">
+                    <div class="">
+                        <img src="./img/team1.jpg" alt="와요사이트">
+                        
+                    </div>
+                    <div>
+                        <p>wayo 독립형 홈페이지 </p>
+                        <span>반려동물을 위한 방문 펫시팅 서비스 및 <br>
+                            다양한 서비스를 제공하는 사이트입니다.</span>
+                        <span>기여도 : 33%</span> <br>
+                        <span>작업영역 : 메인 배너, 주요 서비스, 실시간 리뷰</span>
+                    </div>
+                    <div class="">
+                        <a href="#none" target="_blank" class="d-block">vercel</a>
+                        <a href="#none" target="_blank" class="d-block">git hub</a>           
+                    </div>
+
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container d-flex">
+                    <div class="">
+                        <img src="./img/team1.jpg" alt="와요사이트">
+                        
+                    </div>
+                    <div>
+                        <p>Loopet 플랫폼 홈페이지 </p>
+                        <span>아이웹 솔루션을 활용하여 제작한 <br>
+                            유기동물 보호를 위한 기부 키트 판매 사이트입니다. 
+                        <span>기여도 : 33%</span> <br>
+                        <span>작업영역 : 기획, 회사소개 및 기부키트 (기부방법 제외)</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+</section>
+
         <!-- Bootstrap JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".TeamSwiper", {
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
     </body>
 </html>
