@@ -3,7 +3,7 @@ $activeDeep : #75611f;
 
 body{
     *{
-        font-family: 'Montserrat', 'IBM Plex Sans KR', sans-serif;
+        font-family: 'spinwerad', 'IBM Plex Sans KR', sans-serif;
         font-weight: 400;
     }
 }
@@ -15,3 +15,52 @@ a{
     text-decoration: none;
     color: $activeColor;
 }
+i{
+    color: #222;
+}
+#mainNav{
+    border-bottom: 1px #222 solid;
+}
+
+#main_banner{
+
+    height: auto;
+    padding-top: 65px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+
+
+    .main_banner_txt{
+        font-size: 6vw;
+    }
+    .main_banner_subtxt{
+        font-size: 4vw;
+    }
+    .main_a{
+     border: 1px solid #222;
+      width: 70px;
+      border-radius: 50%;
+      padding: 0.5rem;
+      text-align: center;
+      margin: 0 auto;
+      animation: down 8s linear 0s infinite normal;
+      margin-top: 20px;
+    }
+    .main_gif{
+        background-color: #000;
+        background-image: url('../img/web.gif');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 450px;
+        max-height: 520px;
+    }
+}
+
+@keyframes down {
+	0%   {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
