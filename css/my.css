@@ -68,3 +68,40 @@ i {
   justify-content: center;
   min-height: 250px;
 }
+
+#teamproject {
+  background-color: rgba(252, 193, 0, 0.4);
+}
+#teamproject .swiper-button-next,
+#teamproject .swiper-button-prev {
+  color: #222;
+  border: 1px #222 solid;
+  padding: 20px;
+}
+#teamproject .swiper-button-next {
+  right: 5%;
+}
+#teamproject .swiper-button-prev {
+  left: 5%;
+}
+#teamproject .swiper-button-next::after,
+#teamproject .swiper-button-prev::after {
+  font-size: 20px;
+}
+#teamproject .border_ {
+  border-bottom: 1px #222 solid;
+  line-height: 2.5;
+  margin-bottom: 2rem;
+}
+#teamproject .more {
+  border: 1px #222 solid;
+  width: 49%;
+  padding: 10px;
+  text-align: center;
+  color: #222;
+}
+#teamproject .more:hover {
+  background-color: #222;
+  color: #fff;
+  transition: 0.5s;
+}

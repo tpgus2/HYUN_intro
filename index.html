@@ -186,46 +186,58 @@
             </div>
         </section>
 
-<section id="teamproject">
-
-        <div class="swiper TeamSwiper">
+<section id="teamproject" class="">
+        <div class="swiper TeamSwiper ">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="container d-flex">
-                    <div class="">
-                        <img src="./img/team1.jpg" alt="와요사이트">
-                        
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="col-6">
+                        <img src="./img/team1.png" alt="와요사이트" class="d-block w-100">
                     </div>
-                    <div>
-                        <p>wayo 독립형 홈페이지 </p>
-                        <span>반려동물을 위한 방문 펫시팅 서비스 및 <br>
-                            다양한 서비스를 제공하는 사이트입니다.</span>
-                        <span>기여도 : 33%</span> <br>
-                        <span>작업영역 : 메인 배너, 주요 서비스, 실시간 리뷰</span>
+                    <div class="col-6 p-4">
+                        <div>
+                            <h3 class="border_">wayo 독립형 홈페이지 </h3>
+                            <span>반려동물을 위한 방문 펫시팅 서비스 및 <br>
+                                다양한 서비스를 제공하는 사이트입니다.</span>
+                        </div>
+                        <div class="my-4">
+                            <p>기여도 : 33%</p> 
+                            <p>작업영역 : 메인 배너, 주요 서비스, 실시간 리뷰</p>        
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <a href="#none" target="_blank" class="d-block more">Vercel</a>
+                            <a href="#none" target="_blank" class="d-block more">Git hub</a>           
+                        </div>
                     </div>
-                    <div class="">
-                        <a href="#none" target="_blank" class="d-block">vercel</a>
-                        <a href="#none" target="_blank" class="d-block">git hub</a>           
-                    </div>
+
 
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="container d-flex">
-                    <div class="">
-                        <img src="./img/team1.jpg" alt="와요사이트">
-                        
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div class="col-6">
+                        <img src="./img/team2.png" alt="루펫 사이트" class="d-block w-100">
                     </div>
-                    <div>
-                        <p>Loopet 플랫폼 홈페이지 </p>
-                        <span>아이웹 솔루션을 활용하여 제작한 <br>
-                            유기동물 보호를 위한 기부 키트 판매 사이트입니다. 
-                        <span>기여도 : 33%</span> <br>
-                        <span>작업영역 : 기획, 회사소개 및 기부키트 (기부방법 제외)</span>
+                    <div class="col-6 p-4">
+                        <div>
+                            <h3 class="border_">Loopet 플랫폼 홈페이지 </h3>
+                            <span>아이웹 솔루션을 활용하여 제작한 <br>
+                                유기동물 보호를 위한 기부 키트 판매 사이트입니다.                             
+                        </div>
+                        <div class="my-4">
+                            <p>기여도 : 33%</p>
+                            <p>작업영역 : 기획, 회사소개 및 기부키트 (기부방법 제외)</p>                            
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <a href="#none" target="_blank" class="d-block more">Loopet</a>
+                            <a href="#none" target="_blank" class="d-block more">Figjam</a>           
+                        </div>
                     </div>
                 </div>
               </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
 </section>
 
@@ -234,11 +246,16 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             var swiper = new Swiper(".TeamSwiper", {
-              navigation: {
+                // direction: "vertical",
+                navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
-              },
+            },
+                clickable: true,
+
+  
             });
+
           </script>
     </body>
 </html>
