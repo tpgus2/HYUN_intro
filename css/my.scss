@@ -18,6 +18,23 @@ a{
 i{
     color: #222;
 }
+.mt150{
+    margin-top: 150px;
+}
+.more{
+    border: 1px #222 solid;
+    padding: 10px;
+    text-align: center;
+    color: #222;
+    white-space: nowrap;
+
+    &:hover{
+        background-color: #222;
+        color: #fff;
+        transition: .5s;
+    }
+
+}
 #mainNav{
     border-bottom: 1px #222 solid;
 }
@@ -78,7 +95,7 @@ i{
 
 #teamproject{
 
-    background-color: rgba(252, 193, 0, .4);
+    background: rgba(252, 193, 0, .4);
 
     // .notebook{
     //     background-image: url('../img/team1.jpg');
@@ -111,17 +128,26 @@ i{
         margin-bottom: 2rem;
     }
     .more{
-        border: 1px #222 solid;
         width: 49%;
-        padding: 10px;
-        text-align: center;
-        color: #222;
-
-        &:hover{
-            background-color: #222;
-            color: #fff;
-            transition: .5s;
+    }
+    @media (max-width:1200px) {
+        .swiper-button-next{
+            right: 1%;
         }
+        .swiper-button-prev{
+            left: 1%;
+        }
+    }
+    @media (max-width:575px) {
+        .swiper-button-next,
+        .swiper-button-prev{
+            display: none;
+        }
+    }
+}
 
+#portfolio{
+    .portfolio-link{
+        height: 350px;
     }
 }
