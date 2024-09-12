@@ -74,6 +74,32 @@ i{
         height: 450px;
         max-height: 520px;
     }
+    @media (max-width:1024px) {
+        .main_banner_txt{
+            font-size: 9vw;
+        }
+        .main_banner_subtxt{
+            font-size: 6vw;
+        }
+    }
+    @media (max-width:768px) {
+        .main_banner_txt{
+            font-size: 11vw;
+        }
+        .main_banner_subtxt{
+            font-size: 7vw;
+        }
+    }
+    @media (max-width:375px) {
+        .main_gif{
+            height: 360px;
+        }
+    }
+    @media (max-width:375px) {
+        .main_banner_txt{
+            font-size: 12vw;
+        }
+    }
 }
 
 @keyframes down {
@@ -90,12 +116,18 @@ i{
         justify-content: center;
         min-height: 250px;
         // padding: 70px;
+
+
+        &:hover{
+            transform: translateY(-7%);
+            transition: .5s ease-in;
+        }
     }
 }
 
 #teamproject{
 
-    background: rgba(252, 193, 0, .4);
+    background: rgba(252, 193, 0, .3);
 
     // .notebook{
     //     background-image: url('../img/team1.jpg');
@@ -152,6 +184,15 @@ i{
     }
 }
 
+#pre_interview{
+    .accordion-item:first-child(1){
+        border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color)
+    }
+}
 footer{
     border-top: 1px #222 solid;
+    
+    p{
+        font-size: .9rem;
+    }
 }

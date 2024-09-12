@@ -647,7 +647,7 @@ progress {
     max-width: 540px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
   }
@@ -1062,7 +1062,7 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-md {
     flex: 1 0 0%;
   }
@@ -8795,7 +8795,7 @@ textarea.form-control-lg {
     text-align: center !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .float-md-start {
     float: left !important;
   }
@@ -11131,7 +11131,7 @@ header.masthead .masthead-heading {
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
-  line-height: 14px;
+  line-height: 20px;
   margin-top: 12px;
 }
 .timeline > li.timeline-inverted > .timeline-panel {
